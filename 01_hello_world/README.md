@@ -18,7 +18,7 @@ Follow these steps in order. You will need **two separate terminal windows**.
 
 #### Step 1: Prerequisites
 
-Ensure you have activated your virtual environment and installed the dependencies. Make sure you are in `01_HelloWorld` directory
+Ensure you have activated your virtual environment and installed the dependencies. Make sure you are in `01_hello_world` directory.
 
 
 #### Step 2: Start the A2A Server
