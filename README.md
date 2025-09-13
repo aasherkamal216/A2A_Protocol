@@ -1,32 +1,7 @@
 # Learning the Agent2Agent (A2A) Protocol: A Hands-On Guide
 
 ![A2A](public/a2a_protocol.jpg)
-Welcome! This repository is a collection of tutorials designed to help you understand and build applications using the Agent2Agent (A2A) protocol. We will start from the absolute basics and build our way up to more complex, multi-agent systems.
-
-### Prerequisites
-
-*   Python 3.12+
-*   [uv](https://docs.astral.sh/uv/getting-started/installation/) (a fast Python package manager)
-
-### Project Setup
-
-1. Clone the repository:
-```bash
-git clone https://github.com/aasherkamal216/A2A_Protocol.git
-cd A2A_Protocol
-```
-
-2. Create and Activate Virtual Environment:
-```bash
-uv venv
-.venv\Scripts\activate # for Windows
-source .venv/bin/activate # for Mac
-```
-
-3. Install dependencies:
-```bash
-uv sync
-```
+Welcome! This repository is a collection of tutorials designed to help you understand and build applications using the Agent2Agent (A2A) protocol. We will start from the absolute basics and build our way up to more complex, multi-agent systems and authentication.
 
 ### Core A2A Concepts
 

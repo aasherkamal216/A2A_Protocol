@@ -12,14 +12,31 @@ This example consists of three key files:
 *   `raw_client.py`: A client that communicates with the server using only the `requests` library. This is to demonstrate the underlying A2A protocol without any SDK abstractions.
 *   `client.py`: A modern client that uses the `a2a-sdk`'s `ClientFactory` to simplify discovery and communication.
 
-### Running the Example
+## Running the Example
 
-Follow these steps in order. You will need **two separate terminal windows**.
+### Prerequisites
 
-#### Step 1: Prerequisites
+*   Python 3.12+
+*   [uv](https://docs.astral.sh/uv/getting-started/installation/)
 
-Ensure you have activated your virtual environment and installed the dependencies. Make sure you are in `01_hello_world` directory.
+### Step 1: Project Setup
 
+1. Ensure you are in the `01_hello_world` directory.
+```bash
+cd 01_hello_world
+```
+
+2. Create and Activate Virtual Environment:
+```bash
+uv venv
+.venv\Scripts\activate # for Windows
+source .venv/bin/activate # for Mac
+```
+
+3. Install dependencies:
+```bash
+uv sync
+```
 
 #### Step 2: Start the A2A Server
 
@@ -30,8 +47,6 @@ uv run server.py
 ```
 
 You should see a message indicating the server is running on `http://localhost:9999`.
-
-
 Your agent is now live and waiting for requests!
 
 #### Step 3: Interact with Raw HTTP

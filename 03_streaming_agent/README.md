@@ -26,13 +26,37 @@ This project contains a "Weather Agent". When a client asks for the weather:
 
 ## How to Run
 
-Ensure you have activated your virtual environment and installed the dependencies. Make sure you are in `03_streaming_agent` directory.
+### Prerequisites
+
+*   Python 3.12+
+*   [uv](https://docs.astral.sh/uv/getting-started/installation/)
+
+### Project Setup
+
+1. Ensure you are in the `03_streaming_agent` directory.
+```bash
+cd 03_streaming_agent
+```
+
+2. Create and Activate Virtual Environment:
+```bash
+uv venv
+.venv\Scripts\activate # for Windows
+source .venv/bin/activate # for Mac
+```
+
+3. Install dependencies:
+```bash
+uv sync
+```
 
 ### 1. Configure API Key
 
-Create a `.env` file at the root directory and add your Google Gemini API key:
+Create a `.env` file in the **root of the `03_streaming_agent` directory** and add your Google Gemini API key:
+
 ```bash
-echo "GOOGLE_API_KEY=your_gemini_api_key_here" > .env
+# .env file
+GOOGLE_API_KEY=your_gemini_api_key_here
 ```
 
 > [!NOTE]
@@ -40,7 +64,6 @@ echo "GOOGLE_API_KEY=your_gemini_api_key_here" > .env
 
 ### 2. Start the Server
 
-From the `03_streaming_agent` directory, run the server:
 ```bash
 uv run server.py
 ```

@@ -24,8 +24,29 @@ Even though this process is very fast, it demonstrates the full, stateful protoc
 
 ## How to Run
 
-Ensure you have activated your virtual environment and installed the dependencies. Make sure you are in `02_stateful_task_agent` directory.
+### Prerequisites
 
+*   Python 3.12+
+*   [uv](https://docs.astral.sh/uv/getting-started/installation/)
+
+### Project Setup
+
+1. Ensure you are in the `02_stateful_task_agent` directory.
+```bash
+cd 02_stateful_task_agent
+```
+
+2. Create and Activate Virtual Environment:
+```bash
+uv venv
+.venv\Scripts\activate # for Windows
+source .venv/bin/activate # for Mac
+```
+
+3. Install dependencies:
+```bash
+uv sync
+```
 ### 1. Start the Server
 
 ```bash
