@@ -116,8 +116,8 @@ if __name__ == "__main__":
         description="A multimodal agent that can create and edit images using Gemini.",
         url="http://localhost:10005/",
         version="1.0.0",
-        default_input_modes=["text/plain", "image/png"],
-        default_output_modes=["text/plain", "image/png"],
+        default_input_modes=["text/plain", "image/png", "image/jpeg"],
+        default_output_modes=["text/plain", "image/png", "image/jpeg"],
         capabilities=AgentCapabilities(streaming=True),
         skills=[generate_skill, remix_skill],
     )

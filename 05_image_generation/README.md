@@ -83,8 +83,12 @@ In a **new terminal** (with the virtual environment activated), run the client:
 uv run client.py
 ```
 
-The client will automatically run a two-part demonstration:
-1. It will first ask the agent to generate a new image, printing real-time progress updates. It will save the result as `generated_image.png`.
-2. It will then immediately use that new image to ask the agent for a remix, again with progress updates, saving the result as `remixed_image.png`.
+### 4. Run the Chainlit app
 
-Check your `05_image_generation` directory for the output images!
+You can also run the Chainlit app acting as A2A client. Run this command:
+
+```bash
+chainlit run app.py
+```
+
+Now you can interact with the agent through the Chainlit interface at `http://localhost:8000`. Simply write a prompt or upload an image to remix/edit.
